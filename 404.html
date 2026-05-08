@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <script>
+    (function() {
+      var parts = location.pathname.split('/').filter(Boolean);
+      var repo = parts[0];
+      if (!repo) {
+        window.location.replace('/');
+        return;
+      }
+      window.location.replace('/' + repo + '/' + location.search + location.hash);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to app...</p>
+</body>
+</html>

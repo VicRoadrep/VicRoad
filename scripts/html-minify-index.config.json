@@ -1,0 +1,18 @@
+{
+  "collapseWhitespace": true,
+  "conservativeCollapse": true,
+  "minifyCSS": true,
+  "minifyJS": {
+    "compress": {
+      "passes": 2,
+      "drop_debugger": true
+    },
+    "mangle": true,
+    "format": { "comments": false }
+  },
+  "processScripts": ["text/javascript"],
+  "removeComments": false,
+  "removeRedundantAttributes": true,
+  "removeScriptTypeAttributes": true,
+  "useShortDoctype": true
+}
